@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+
+    "name": "SHARC Rank List",
+    "description": "누가 누군지 못 알아보는 당신을 위하여.",
+    "version": "1.0",
+
+    "content_scripts": [ {
+        "run_at": "document_end",
+        "js": [ "inject.js" ],
+        "css": [],
+        "matches": [ "https://www.acmicpc.net/group/ranklist/2554", "https://www.acmicpc.net/group/practice/2554/*" ]
+    } ]
+}
